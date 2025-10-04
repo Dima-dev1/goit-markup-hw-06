@@ -303,9 +303,6 @@ a {
     color: #434455;
 }
 
-.mob-contacts-link.current {
-    color: #404bbf;
-}
 
 .socials-list.mobile {
     display: flex;
