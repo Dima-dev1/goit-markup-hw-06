@@ -34,6 +34,78 @@
                 <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+        </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close" type="button" data-menu-close>
+                    <svg class="close-btn-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-sign"></use>
+                    </svg>
+                </button>
+        
+                <nav class="mobile-menu-nav">
+                    <ul class="mob-nav-list">
+                        <li class="mob-nav-item">
+                            <a href="./index.html" class="mob-nav-link current">Studio</a>
+                        </li>
+                        <li class="mob-nav-item">
+                            <a href="" class="mob-nav-link">Portfolio</a>
+                        </li>
+                        <li class="mob-nav-item">
+                            <a href="" class="mob-nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <address class="mob-menu-contacts">
+                    <ul class="mob-contacts-list">
+                        <li class="mob-contacts-item">
+                            <a href="tel:+110001111111" class="mob-contacts-link current">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mob-contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mob-contacts-link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+        
+                <ul class="socials-list mobile">
+                    <li class="socials-item">
+                        <a href="" class="socials-list-link">
+                            <svg class="socials-icon-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-list-link">
+                            <svg class="socials-icon-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-list-link">
+                            <svg class="socials-icon-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-list-link">
+                            <svg class="socials-icon-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -104,7 +176,7 @@
                     <h2 class="team-title">Our Team</h2>
                     <ul class="team-list">
                         <li class="team-item">
-                            <img src="./images/img-1.jpg" alt="Mark Guerrero" width="264" height="260" class="team-photo">
+                            <img src="./images/img-1.jpg" srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x" alt="Mark Guerrero" width="264" height="260" class="team-photo">
                             <div class="card-info">
                                 <h3 class="card-title">Mark Guerrero</h3>
                                 <p class="card-text">Product Designer</p>
@@ -141,7 +213,7 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img src="./images/img-2.jpg" alt="Tom Ford" width="264" height="260" class="team-photo">
+                            <img src="./images/img-2.jpg" srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x" alt="Tom Ford" width="264" height="260" class="team-photo">
                             <div class="card-info">
                                 <h3 class="card-title">Tom Ford</h3>
                                 <p class="card-text">Frontend Developer</p>
@@ -178,7 +250,7 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img src="./images/img-3.jpg" alt="Camila Garcia" width="264" height="260" class="team-photo">
+                            <img src="./images/img-3.jpg" srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x" alt="Camila Garcia" width="264" height="260" class="team-photo">
                             <div class="card-info">
                                 <h3 class="card-title">Camila Garcia</h3>
                                 <p class="card-text">Marketing</p>
@@ -215,7 +287,7 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img src="./images/img-4.jpg" alt="Daniel Wilson" width="264" height="260" class="team-photo">
+                            <img src="./images/img-4.jpg" srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x"alt="Daniel Wilson" width="264" height="260" class="team-photo">
                             <div class="card-info">
                                 <h3 class="card-title">Daniel Wilson</h3>
                                 <p class="card-text">UI Designer</p>
@@ -414,7 +486,7 @@
         </footer>
 
 
-        <div class="backdrop is-open">
+        <div class="backdrop">
             <div class="modal">
                 <button type="button" class="modal-close">
                     <svg class="modal-close-svg" width="8" height="8">
@@ -480,5 +552,9 @@
 
             </div>
         </div>
+
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
